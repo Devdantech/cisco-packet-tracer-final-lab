@@ -91,12 +91,6 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
   <br><strong>WMP300N wireless module installed</strong>
 </p>
 
-### 14. Server Configuration Table
-<p align="center">
-  <img src="/14.png" alt="Server IP table" width="80%">
-  <br><strong>IP summary: router, switch, servers</strong>
-</p>
-
 ### 15. Full Logical Topology Overview
 <p align="center">
   <img src="/1.png" alt="Network topology" width="80%">
