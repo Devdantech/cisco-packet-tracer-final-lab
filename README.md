@@ -5,62 +5,94 @@ In this activity you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, D
 
 ## Packet Tracer Project - Network Configuration
 
+## Packet Tracer Project - Network Configuration
+
 ### 1. DNS Server A Records
 <p align="center">
-  <img src="/01.png" alt="DNS A records for breadcrumb domains" width="80%">
-  <br><strong>DNS A records pointing multiple www.breadcrumb.* domains to 192.168.10.5</strong>
+  <img src="01-dns-records.png" alt="DNS A records" width="80%">
+  <br><strong>Multiple www.breadcrumb.* A records → 192.168.10.5</strong>
 </p>
 
-### 2. Web Server (YT-WEB) Services & Files
+### 2. Web Server Files & Services
 <p align="center">
-  <img src="/02.png" alt="Web server HTTP/HTTPS and HTML files" width="80%">
-  <br><strong>HTTP and HTTPS enabled; hosted files: index.html, helloworld.html, image.html, copyrights.html</strong>
+  <img src="02-web-server-files.png" alt="Web server files" width="80%">
+  <br><strong>HTTP/HTTPS on, files: index.html, copyrights.html, etc.</strong>
 </p>
 
-### 3. Switch CLI Configuration (YT-SW-01)
+### 3. Switch CLI (YT-SW-01)
 <p align="center">
-  <img src="/03.png" alt="Switch basic config" width="80%">
-  <br><strong>Hostname, passwords, VLAN 1 IP 192.168.10.2/24, write memory</strong>
+  <img src="03-switch-cli.png" alt="Switch config" width="80%">
+  <br><strong>Hostname, passwords, VLAN1 192.168.10.2/24</strong>
 </p>
 
-### 4. DHCP Server Pool Settings
+### 4. DHCP Pool Configuration
 <p align="center">
-  <img src="/04.png" alt="DHCP pool configuration" width="80%">
-  <br><strong>Pool: serverPool • Start: 192.168.10.10 • Mask: /24 • Gateway: 192.168.10.1 • DNS: 192.168.10.3</strong>
+  <img src="04-dhcp-pool.png" alt="DHCP pool" width="80%">
+  <br><strong>Start 192.168.10.10, /24, GW 192.168.10.1, DNS 192.168.10.3</strong>
 </p>
 
-### 5. DNS Server IP Configuration
+### 5. DNS Server IP Config
 <p align="center">
-  <img src="/05.png" alt="DNS server static IP" width="80%">
-  <br><strong>Static IPv4: 192.168.10.3/24 • Gateway: 192.168.10.1 • DNS: self</strong>
+  <img src="05-dns-ip-config.png" alt="DNS IP" width="80%">
+  <br><strong>Static 192.168.10.3/24, GW 192.168.10.1, self as DNS</strong>
 </p>
 
-### 6. DHCP Client Assignment (Server)
+### 6. DHCP Server Interface (received IP)
 <p align="center">
-  <img src="/06.png" alt="DHCP client received IP" width="80%">
-  <br><strong>DHCP server interface received 192.168.10.4 via DHCP</strong>
+  <img src="06-dhcp-client.png" alt="DHCP client IP" width="80%">
+  <br><strong>FastEthernet0 got 192.168.10.4 via DHCP</strong>
 </p>
 
-### 7. Router CLI Configuration (YT-R-01)
+### 7. Switch Security & VLAN Config
 <p align="center">
-  <img src="/07.png" alt="Router basic config" width="80%">
-  <br><strong>Hostname, passwords, G0/0: 192.168.10.1/24, no shutdown</strong>
+  <img src="07-switch-security.png" alt="Switch security" width="80%">
+  <br><strong>Passwords (cisco/class), enable secret, no shut VLAN1</strong>
 </p>
 
-### 8. Web Server IP (YT-WEB)
+### 8. Router CLI (YT-R-01)
 <p align="center">
-  <img src="/08.png" alt="Web server DHCP IP" width="80%">
-  <br><strong>YT-WEB received 192.168.10.5 via DHCP</strong>
+  <img src="08-router-cli.png" alt="Router config" width="80%">
+  <br><strong>G0/0: 192.168.10.1/24, passwords, no shutdown</strong>
 </p>
 
-### 9. Simulation - DHCP Packet Flow
+### 9. Web Server IP (YT-WEB)
 <p align="center">
-  <img src="/09.png" alt="DHCP packet exchange" width="80%">
-  <br><strong>DHCP Discover/Offer/Request/Ack captured in simulation</strong>
+  <img src="09-web-server-ip.png" alt="Web server IP" width="80%">
+  <br><strong>Received 192.168.10.5 via DHCP</strong>
 </p>
 
-### 10. Overall Logical Topology
+### 10. DHCP Packet Simulation
 <p align="center">
-  <img src="/10.png" alt="Full network topology" width="80%">
-  <br><strong>Complete logical view: router, switch, servers, client PCs</strong>
+  <img src="10-simulation-dhcp.png" alt="DHCP simulation" width="80%">
+  <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
+</p>
+
+### 11. Sale PC - DHCP Assigned
+<p align="center">
+  <img src="11-sale-pc-dhcp.png" alt="Sale PC IP" width="80%">
+  <br><strong>FastEthernet0: 192.168.10.5 via DHCP</strong>
+</p>
+
+### 12. Marketing PC - DHCP Assigned
+<p align="center">
+  <img src="12-marketing-pc-dhcp.png" alt="Marketing PC IP" width="80%">
+  <br><strong>FastEthernet0: 192.168.10.6 via DHCP</strong>
+</p>
+
+### 13. DNS Server Physical Modules
+<p align="center">
+  <img src="13-dns-modules.png" alt="DNS physical view" width="80%">
+  <br><strong>WMP300N wireless module installed</strong>
+</p>
+
+### 14. Server Configuration Table
+<p align="center">
+  <img src="14-server-table.png" alt="Server IP table" width="80%">
+  <br><strong>IP summary: router, switch, servers</strong>
+</p>
+
+### 15. Full Logical Topology Overview
+<p align="center">
+  <img src="15-full-topology.png" alt="Network topology" width="80%">
+  <br><strong>Complete layout: router, switch, servers, clients</strong>
 </p>
