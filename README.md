@@ -63,36 +63,42 @@ In this activity you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, D
 
 ### 10. DHCP Packet Simulation
 <p align="center">
-  <img src="10-simulation-dhcp.png" alt="DHCP simulation" width="80%">
+  <img src="/10.1.png" alt="DHCP simulation" width="80%">
+  <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
+</p>
+
+### 10. DHCP Packet Simulation
+<p align="center">
+  <img src="/10.png" alt="DHCP simulation" width="80%">
   <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
 </p>
 
 ### 11. Sale PC - DHCP Assigned
 <p align="center">
-  <img src="11.png" alt="Sale PC IP" width="80%">
+  <img src="/11.png" alt="Sale PC IP" width="80%">
   <br><strong>FastEthernet0: 192.168.10.5 via DHCP</strong>
 </p>
 
 ### 12. Marketing PC - DHCP Assigned
 <p align="center">
-  <img src="12.png" alt="Marketing PC IP" width="80%">
+  <img src="/12.png" alt="Marketing PC IP" width="80%">
   <br><strong>FastEthernet0: 192.168.10.6 via DHCP</strong>
 </p>
 
 ### 13. DNS Server Physical Modules
 <p align="center">
-  <img src="13.png" alt="DNS physical view" width="80%">
+  <img src="/13.png" alt="DNS physical view" width="80%">
   <br><strong>WMP300N wireless module installed</strong>
 </p>
 
 ### 14. Server Configuration Table
 <p align="center">
-  <img src="14.png" alt="Server IP table" width="80%">
+  <img src="/14.png" alt="Server IP table" width="80%">
   <br><strong>IP summary: router, switch, servers</strong>
 </p>
 
 ### 15. Full Logical Topology Overview
 <p align="center">
-  <img src="15.png" alt="Network topology" width="80%">
+  <img src="/15.png" alt="Network topology" width="80%">
   <br><strong>Complete layout: router, switch, servers, clients</strong>
 </p>
