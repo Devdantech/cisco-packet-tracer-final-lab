@@ -9,7 +9,7 @@ In this activity you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, D
 
 ### 1. DNS Server A Records
 <p align="center">
-  <img src="01-dns-records.png" alt="DNS A records" width="80%">
+  <img src="/1.png" alt="DNS A records" width="80%">
   <br><strong>Multiple www.breadcrumb.* A records → 192.168.10.5</strong>
 </p>
 
