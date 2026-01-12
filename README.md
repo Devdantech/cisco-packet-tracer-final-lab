@@ -5,7 +5,7 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
 
 ## Packet Tracer Project - Network Configuration
 
-### 1.png - Full Logical Topology Overview
+### 1 - Full Logical Topology Overview
 <p align="center">
   <img src="/1.png" alt="Network topology" width="80%">
   <br><strong>Complete layout: router, switch, servers, clients</strong>
