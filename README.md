@@ -15,7 +15,7 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
 
 ### 2. Web Server Files & Services
 <p align="center">
-  <img src="/2.png" alt="Web server files" width="80%">
+  <img src="/10.1.png" alt="Web server files" width="80%">
   <br><strong>HTTP/HTTPS on, files: index.html, copyrights.html, etc.</strong>
 </p>
 
