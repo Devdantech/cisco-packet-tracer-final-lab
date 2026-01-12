@@ -63,7 +63,7 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
 
 ### 10. DHCP Packet Simulation
 <p align="center">
-  <img src="/10.1.png" alt="DHCP simulation" width="80%">
+  <img src="/14.png" alt="DHCP simulation" width="80%">
   <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
 </p>
 
