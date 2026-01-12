@@ -5,10 +5,10 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
 
 ## Packet Tracer Project - Network Configuration
 
-### 1- DNS Server A Records
+### 1.png - Full Logical Topology Overview
 <p align="center">
-  <img src="/1.png" alt="DNS A records" width="80%">
-  <br><strong>Multiple www.breadcrumb.* A records → 192.168.10.5</strong>
+  <img src="/1.png" alt="Network topology" width="80%">
+  <br><strong>Complete layout: router, switch, servers, clients</strong>
 </p>
 
 ### 2 - DNS Server Physical Modules
@@ -95,8 +95,3 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
   <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
 </p>
 
-### 15.png - Full Logical Topology Overview
-<p align="center">
-  <img src="/15.png" alt="Network topology" width="80%">
-  <br><strong>Complete layout: router, switch, servers, clients</strong>
-</p>
