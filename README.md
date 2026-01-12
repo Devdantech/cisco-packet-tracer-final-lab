@@ -9,68 +9,60 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
 
 ### 1. DNS Server A Records
 <p align="center">
-  <img src="/8.png" alt="DNS A records" width="80%">
+  <img src="/1.png" alt="DNS A records" width="80%">
   <br><strong>Multiple www.breadcrumb.* A records → 192.168.10.5</strong>
 </p>
 
-### 2. Web Server Files & Services
+### 2. DNS Server Physical Modules
 <p align="center">
-  <img src="/10.1.png" alt="Web server files" width="80%">
-  <br><strong>HTTP/HTTPS on, files: index.html, copyrights.html, etc.</strong>
+  <img src="/2.png" alt="DNS physical view" width="80%">
+  <br><strong>WMP300N wireless module installed</strong>
 </p>
 
-### 3. Switch CLI (YT-SW-01)
-<p align="center">
-  <img src="/4.png" alt="Switch config" width="80%">
-  <br><strong>Hostname, passwords, VLAN1 192.168.10.2/24</strong>
-</p>
-
-### 4. DHCP Pool Configuration
-<p align="center">
-  <img src="/6.png" alt="DHCP pool" width="80%">
-  <br><strong>Start 192.168.10.10, /24, GW 192.168.10.1, DNS 192.168.10.3</strong>
-</p>
-
-### 5. DNS Server IP Config
-<p align="center">
-  <img src="/9.png" alt="DNS IP" width="80%">
-  <br><strong>Static 192.168.10.3/24, GW 192.168.10.1, self as DNS</strong>
-</p>
-
-### 6. DHCP Server Interface (received IP)
-<p align="center">
-  <img src="/7.png" alt="DHCP client IP" width="80%">
-  <br><strong>FastEthernet0 got 192.168.10.4 via DHCP</strong>
-</p>
-
-### 7. Switch Security & VLAN Config
-<p align="center">
-  <img src="/4.png" alt="Switch security" width="80%">
-  <br><strong>Passwords (cisco/class), enable secret, no shut VLAN1</strong>
-</p>
-
-### 8. Router CLI (YT-R-01)
+### 3. Router CLI (YT-R-01)
 <p align="center">
   <img src="/3.png" alt="Router config" width="80%">
   <br><strong>G0/0: 192.168.10.1/24, passwords, no shutdown</strong>
 </p>
 
-### 9. Web Server IP (YT-WEB)
+### 4. Switch CLI (YT-SW-01)
+<p align="center">
+  <img src="/4.png" alt="Switch config" width="80%">
+  <br><strong>Hostname, passwords, VLAN1 192.168.10.2/24</strong>
+</p>
+
+### 5. (Duplicate / missing in sequence)
+
+### 6. DHCP Pool Configuration
+<p align="center">
+  <img src="/6.png" alt="DHCP pool" width="80%">
+  <br><strong>Start 192.168.10.10, /24, GW 192.168.10.1, DNS 192.168.10.3</strong>
+</p>
+
+### 7. DHCP Server Interface (received IP)
+<p align="center">
+  <img src="/7.png" alt="DHCP client IP" width="80%">
+  <br><strong>FastEthernet0 got 192.168.10.4 via DHCP</strong>
+</p>
+
+### 8. (Duplicate / missing in sequence)
+
+### 9. DNS Server IP Config
+<p align="center">
+  <img src="/9.png" alt="DNS IP" width="80%">
+  <br><strong>Static 192.168.10.3/24, GW 192.168.10.1, self as DNS</strong>
+</p>
+
+### 10. Web Server IP (YT-WEB)
 <p align="center">
   <img src="/10.png" alt="Web server IP" width="80%">
-  <br><strong>Received 198.10.5 via DHCP</strong>
+  <br><strong>Received 192.168.10.5 via DHCP</strong>
 </p>
 
-### 10. DHCP Packet Simulation
+### 10.1. Web Server Files & Services
 <p align="center">
-  <img src="/14.png" alt="DHCP simulation" width="80%">
-  <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
-</p>
-
-### 10. DHCP Packet Simulation
-<p align="center">
-  <img src="/15.png" alt="DHCP simulation" width="80%">
-  <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
+  <img src="/10.1.png" alt="Web server files" width="80%">
+  <br><strong>HTTP/HTTPS on, files: index.html, copyrights.html, etc.</strong>
 </p>
 
 ### 11. Sale PC - DHCP Assigned
@@ -85,14 +77,16 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
   <br><strong>FastEthernet0: 192.168.10.6 via DHCP</strong>
 </p>
 
-### 13. DNS Server Physical Modules
+### 13. (Duplicate / missing in sequence)
+
+### 14. DHCP Packet Simulation
 <p align="center">
-  <img src="/2.png" alt="DNS physical view" width="80%">
-  <br><strong>WMP300N wireless module installed</strong>
+  <img src="/14.png" alt="DHCP simulation" width="80%">
+  <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
 </p>
 
 ### 15. Full Logical Topology Overview
 <p align="center">
-  <img src="/1.png" alt="Network topology" width="80%">
+  <img src="/15.png" alt="Network topology" width="80%">
   <br><strong>Complete layout: router, switch, servers, clients</strong>
 </p>
