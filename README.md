@@ -57,7 +57,7 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
 
 ### 9. Web Server IP (YT-WEB)
 <p align="center">
-  <img src="/9.png" alt="Web server IP" width="80%">
+  <img src="/10.png" alt="Web server IP" width="80%">
   <br><strong>Received 198.10.5 via DHCP</strong>
 </p>
 
