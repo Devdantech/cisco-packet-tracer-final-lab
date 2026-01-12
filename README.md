@@ -47,11 +47,10 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
   <br><strong>FastEthernet0 got 192.168.10.4 via DHCP</strong>
 </p>
 
-### 8 - Router Interface & Basic Settings
+### 8 - DNS A-Record
 <p align="center">
   <img src="/8.png" alt="Router interface config" width="80%">
-  <br><strong>YT-R-01 G0/0 IP assignment and no shutdown</strong>
-</p>
+  
 
 ### 9 - DNS Server IP Config
 <p align="center">
@@ -89,7 +88,7 @@ In this activity, you will configure the YT-R-01 router, YT-SW-01 switch, DHCP, 
   <br><strong>FastEthernet0: 192.168.10.7 via DHCP</strong>
 </p>
 
-### 14 - DHCP Packet Simulation
+### 15 - DHCP Packet Simulation
 <p align="center">
   <img src="/14.png" alt="DHCP simulation" width="80%">
   <br><strong>DHCP Discover/Offer/Request/Ack flow</strong>
